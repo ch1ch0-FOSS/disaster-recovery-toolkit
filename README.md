@@ -1,9 +1,28 @@
 # disaster-recovery-toolkit
 
-Infrastructure automation and tooling maintained by ch1ch0-FOSS.
+Backup and disaster recovery tools and frameworks.
 
-## Status
-Initial setup in progress.
+## Components
+
+- **backup/**: Automated backup scripts
+  - PostgreSQL, MySQL, filesystem backups
+  - Retention and cleanup policies
+- **recovery/**: Runbooks and recovery procedures
+- **monitoring/**: Backup health checks
+- **templates/**: Configuration templates
+
+## Key Scripts
+
+- `backup-postgres.sh`: PostgreSQL full backup with compression
+- `backup-filesystem.sh`: Incremental filesystem backups
+- `recovery-procedure.sh`: Automated recovery verification
+
+## Usage
+
+./backup/scripts/backup-postgres.sh
 
 ## License
+
 MIT
+
+
