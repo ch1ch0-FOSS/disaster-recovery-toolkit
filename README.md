@@ -13,9 +13,10 @@ Backup and disaster recovery tools and frameworks.
 
 ## Key Scripts
 
-- `backup-postgres.sh`: PostgreSQL full backup with compression
-- `backup-filesystem.sh`: Incremental filesystem backups
-- `recovery-procedure.sh`: Automated recovery verification
+- `backup-postgres.sh`: PostgreSQL single-database backup with compression
+- `/usr/local/bin/pg-backup.sh`: Cluster-wide PostgreSQL backup using `pg_dumpall` to `/backup/postgresql` with 30‑day retention, triggered daily by `pg-backup.timer`
+- `backup-filesystem.sh`: Incremental filesystem backups for critical service data
+- `recovery-procedure.sh`: Automated recovery verification and integrity checks for restored data
 
 ## Usage
 
